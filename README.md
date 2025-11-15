@@ -46,7 +46,7 @@ El sitio ya está desplegado en Netlify y accesible en:
 - **Badge de estado (opcional):** Netlify ofrece un badge de estado de despliegue que puedes añadir al `README.md`. Para obtenerlo, ve al panel de tu sitio en Netlify > Site settings > General > Deploy badges o busca "Deploy status badge"; copia el URL del badge y añádelo como imagen Markdown:
 
 ```markdown
-[![Netlify Status](https://api.netlify.com/api/v1/badges/<YOUR_BADGE_ID>/deploy-status)](https://app.netlify.com/sites/<your-site-name>/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ed743bdd-5429-4527-8d8e-0cc3822a27e5/deploy-status)](https://app.netlify.com/projects/villacus-web/deploys)
 ```
 
 - **Despliegue continuo:** Si quieres que cada push a `main` se despliegue automáticamente, conecta tu repositorio a Netlify desde el panel de Netlify (Site settings > Continuous Deployment) y autoriza GitHub/GitLab/Bitbucket.
