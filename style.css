@@ -1,38 +1,257 @@
-/* Tamaño común para ambos */
-.same-size-btn,
-.github-button, /* Este selector ayuda a forzar tamaño al script de GitHub */
-.instagram-button {
-  width: 140px;          /* Ajusta a tu preferencia */
-  height: 40px;          /* Ajusta a tu preferencia */
-  font-size: 18px;       /* Igual tamaño de texto */
-  display: inline-flex;  /* Centra icono y texto */
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  box-sizing: border-box;
-  text-align: center;
-  gap: 6px;              /* Espacio entre icono y texto */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e6d9f0 0%, #feffd4 10%, #feffd4 90%, #e6d9f0 100%);
+    color: #000000;
+    min-height: 100vh;
 }
 
-/* GitHub style override (puede necesitar !important por el script externo) */
-.github-button {
-  background: #23272b !important;
-  color: #fff !important;
-  border: none !important;
-  padding: 0 !important;
-  text-decoration: none !important;
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    background: #feffd4;
 }
 
-/* Instagram style */
-.instagram-button {
-  background-color:#e01bb5;
-  color:#fff;
-  text-decoration:none;
-  border: none;
-  padding: 0;
+/* Estilos para header y navegación */
+header {
+    display:flex;
+    align-items:center;
+    gap:16px;
+    margin-bottom:16px;
 }
 
-.instagram-button i {
-  font-size: 18px;
-  margin-right: 4px;
+header h1 {
+    color: #004a99;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav {
+    margin-bottom: 24px;
+}
+
+nav a {
+    color: #004a99;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0066ff;
+    text-decoration: underline;
+}
+
+.intro {
+    margin-bottom: 24px;
+}
+
+.intro p {
+    margin: 12px 0;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+/* Estilos mejorados para botones sociales */
+.social-buttons {
+    margin: 20px 0 28px 0;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.social-btn i {
+    font-size: 1.2em;
+}
+
+.github-btn {
+    background: linear-gradient(135deg, #24292e 0%, #1a1e22 100%);
+}
+
+.github-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(36, 41, 46, 0.3);
+}
+
+.instagram-btn {
+    background: linear-gradient(135deg, #e01bb5 0%, #c41ba8 100%);
+}
+
+.instagram-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(224, 27, 181, 0.3);
+}
+
+.linkedin-btn {
+    background: linear-gradient(135deg, #0077b5 0%, #006399 100%);
+}
+
+.linkedin-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3);
+}
+
+.social-btn:active {
+    transform: translateY(-1px);
+}
+
+.projects {
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.projects-intro {
+    font-size: 1.05em;
+    color: #333;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.projects ul {
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+.projects ul li {
+    background: #fffef0;
+    border-left: 4px solid #0083ff;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.projects ul li:hover {
+    box-shadow: 0 4px 12px rgba(0, 131, 255, 0.15);
+    transform: translateX(4px);
+}
+
+.projects ul li strong {
+    color: #004a99;
+    font-size: 1.1em;
+}
+
+.projects ul li p {
+    margin: 8px 0;
+    color: #555;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: #0083ff;
+    color: white;
+    text-decoration: none;
+    font-size: 0.95em;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.project-link:hover {
+    background: #0066cc;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 131, 255, 0.3);
+}
+
+footer {
+    margin-top: 24px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    color:#333;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Estilos para la sección de contacto */
+.contact {
+    margin-top: 28px;
+    margin-bottom: 28px;
+    background: #fffef0;
+    padding: 24px;
+    border-radius: 8px;
+    border: 2px solid #0083ff;
+}
+
+.contact-intro {
+    color: #555;
+    font-size: 1.05em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-inner {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.contact-photo {
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #0083ff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-details p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.contact-details strong {
+    color: #004a99;
+}
+
+.contact-link {
+    color: #0083ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    main { padding: 20px 16px; }
+    header { flex-direction: column; align-items:flex-start; }
+    .social-buttons { flex-direction: column; align-items:flex-start; }
+    .contact-inner { flex-direction: column; align-items: flex-start; }
 }

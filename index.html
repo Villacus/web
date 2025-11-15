@@ -1,66 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name ="viewport" content="width=device-width">
-        <title>👾Web de Villacus</title>
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <title>Web de Villacus</title>
 
         <meta name="description" content="Pagina web de Oier Villanueva, estudiante de ingenieria informatica en Donostia.">
         <meta property="og:title" content="Web de Oier Villanueva">
         <meta property="og:description" content="Pagina web de Oier Villanueva, estudiante de ingenieria informatica en Donostia.">
-        <meta property="og:image" content="images/villa.jpg">
+        <meta property="og:image" content="images/logo.png">
         <meta property="og:image:alt" content="Foto de Oier Villanueva">
 
-        <meta name="theme-color" content="#0083ff">
         <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 40px;
-                background: #feffd4;
-                color: #000000;
-            }
-            .instagram-button {
-                text-decoration:none;
-                background-color:#e01bb5;
-                color:rgb(255, 255, 255);
-                padding:6px 10px;
-                border-radius:5px;
-                display:inline-flex;
-                align-items:center;
-            }
-        </style>
+        <link rel="icon" href="images/logo.png" type="image/png">
     </head>
     <body>
-        <h1>Villacus</h1>
-        <img src="images/villa.png" alt="Foto de Oier Villanueva" width="100">
-        <nav>
-            <a href="#proyectos">Proyectos</a> |
-            <a href="#contacto">Contacto</a>
-        </nav>
+        <main>
+            <header>
+                <h1>Villacus</h1>
+            </header>
+            <nav>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
 
-        <p>Bienbenido a la pagina web de Oier Villanueva, estudiante de <strong>ingenieria informatica</strong> en Donostia.</p>
+            <section class="intro">
+                <p>Bienvenido a la pagina web de Oier Villanueva, estudiante de <strong>ingenieria informatica</strong> en Donostia.</p>
+                <p>En esta web podras encontrar informacion sobre mis proyectos, habilidades y experiencia en el campo de la informatica.</p>
+                <p>Con una pasión por el desarrollo de software y las soluciones innovadoras, me dedico a crear aplicaciones web modernas, scripts automatizados y sistemas backend robustos. Siempre estoy buscando nuevos desafíos y oportunidades para crecer profesionalmente.</p>
+                <p><strong>Mis áreas de interés incluyen:</strong> Desarrollo web fullstack, automatización, bases de datos, programación orientada a objetos, y arquitectura de software.</p>
+            </section>
 
-        <p>En esta web podras encontrar informacion sobre mis proyectos, habilidades y experiencia en el campo de la informatica.</p>
-        
-        <a class="github-button" href="https://github.com/Villacus" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @Villacus on GitHub">GitHub</a>
-        <a class="instagram-button" href="https://www.instagram.com/villacus9" target="_blank">
-        <i class="fab fa-instagram" style="font-size:18px; margin-right:4px;"></i>Instagram</a>
+            <div class="social-buttons">
+                <a class="social-btn github-btn" href="https://github.com/Villacus" target="_blank" rel="noopener noreferrer" aria-label="Visita mi GitHub">
+                    <i class="fab fa-github"></i><span>GitHub</span>
+                </a>
+                <a class="social-btn instagram-btn" href="https://www.instagram.com/villacus9" target="_blank" rel="noopener noreferrer" aria-label="Sígueme en Instagram">
+                    <i class="fab fa-instagram"></i><span>Instagram</span>
+                </a>
+            </div>
 
-        <header>
-            <h2 id="proyectos">Proyectos Destacados</h2>
-            <ul>
-                <li><strong>Proyecto 1:</strong> Descripcion breve del proyecto 1.</li>
-                <li><strong>Proyecto 2:</strong> Descripcion breve del proyecto 2.</li>
-                <li><strong>Proyecto 3:</strong> Descripcion breve del proyecto 3.</li>
-        </header>
+            <section class="projects">
+                <h2 id="proyectos">Proyectos Destacados</h2>
+                <ul>
+                    <li>
+                        <strong>Proyecto 1: Aplicación Web Moderna</strong>
+                        <p>Aplicación web de ejemplo construida con tecnologías front-end actuales como HTML5, CSS3 y JavaScript vanilla. Incluye diseño responsivo, interfaz intuitiva y optimización para diferentes dispositivos.</p>
+                        <a href="#" class="project-link">Ver más</a>
+                    </li>
+                    <li>
+                        <strong>Proyecto 2: Automatización VPN Universidad</strong>
+                        <p>Script automatizado que gestiona la conexión a la VPN de la universidad, integrando acceso directo al autenticador. Simplifica el proceso de conexión y maneja las credenciales de forma segura, permitiendo una conexión rápida y sin complicaciones desde línea de comandos.</p>
+                        <a href="https://github.com/Villacus/uni-vpn" target="_blank" rel="noopener noreferrer" class="project-link">Ver en GitHub</a>
+                    </li>
+                    <li>
+                        <strong>Proyecto 3: Sistema de Bases de Datos</strong>
+                        <p>Proyecto educativo enfocado en bases de datos relacional y desarrollo back-end. Implementa operaciones CRUD, validación de datos, y buenas prácticas en seguridad.</p>
+                        <a href="#" class="project-link">Ver más</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="contact" aria-labelledby="contacto">
+                <h3 id="contacto">Contacto</h3>
+                <p class="contact-intro">¿Tienes una oportunidad interesante o simplemente quieres saludar? No dudes en contactarme. Estoy abierto a nuevas propuestas, colaboraciones y aprendizaje continuo.</p>
+                <div class="contact-inner">
+                    <img src="images/villa.png" alt="Foto de Oier Villanueva" class="contact-photo" width="120" height="120">
+                    <div class="contact-details">
+                        <p><strong>Estudios:</strong> Ingeniería Informática - Campus de San Sebastián</p>
+                        <p><strong>Email:</strong> <a href="mailto:oiervillanueva2@gmail.com" class="contact-link">oiervillanueva2@gmail.com</a></p>
+                        <p><strong>Teléfono:</strong> <a href="tel:+34685244962" class="contact-link">+34 685 24 49 62</a></p>
+                        <p><strong>Ubicación:</strong> Donostia, Gipuzkoa, España</p>
+                    </div>
+                </div>
+             </section>
+        </main>
+
         <footer>
-            <h4 id="contacto">Contacto:</h4>
-            <h5>Email: <a type="email" href="mailto:oiervillanueva2@gmail.com">oiervillanueva2@gmail.com</a></h5>
-            <h5>Telefono: <a type="tel" href="tel:+34 685 24 49 62">+34 685 24 49 62</a></h5>
+            <p>&copy; <span id="year"></span> Oier Villanueva. Todos los derechos reservados.</p>
         </footer>
+
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>
 
