@@ -14,6 +14,62 @@ main {
     background: #feffd4;
 }
 
+/* Skip link accesibilidad */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background: #004a99;
+    color: #fff;
+    z-index: 1000;
+    border-radius: 4px;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(90deg, rgba(0,74,153,0.06), rgba(0,131,255,0.03));
+    padding: 28px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.hero-title {
+    margin: 0 0 8px 0;
+    color: #002e6b;
+    font-size: 1.6em;
+}
+.hero-sub {
+    margin: 0 0 14px 0;
+    color: #333;
+}
+.hero-ctas { display:flex; gap:10px; flex-wrap:wrap }
+.btn { padding:10px 14px; border-radius:6px; text-decoration:none; display:inline-block }
+.btn.primary { background:#0083ff; color:white; font-weight:600 }
+.btn.outline { border:2px solid #0083ff; color:#0083ff; background:transparent }
+
+/* Skills */
+.skills { margin-top:28px; margin-bottom:28px }
+.skill-list { list-style:none; padding:0; margin:0; display:flex; gap:12px; flex-wrap:wrap }
+.skill-list li { background:#fffef0; padding:8px 12px; border-radius:999px; border:1px solid rgba(0,0,0,0.04) }
+
+/* Project meta */
+.tech, .result { margin:6px 0; color:#444; font-size:0.95em }
+
+/* Focus visible */
+:focus {
+    outline: 3px solid rgba(0,131,255,0.25);
+    outline-offset: 2px;
+}
+
 /* Estilos para header y navegación */
 header {
     display:flex;

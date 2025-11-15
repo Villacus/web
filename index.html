@@ -21,16 +21,19 @@
             <header>
                 <h1>Villacus</h1>
             </header>
-            <nav>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
+            <section class="hero">
+                <h2 class="hero-title">Desarrollo web y automatización para soluciones reales</h2>
+                <p class="hero-sub">Construyo aplicaciones web modernas y herramientas que simplifican flujos de trabajo. Actualmente enfocado en proyectos fullstack, automatización y bases de datos.</p>
+                <div class="hero-ctas">
+                    <a class="btn primary" href="#proyectos">Ver proyectos</a>
+                    <a class="btn outline" href="#contacto">Contactar</a>
+                    <a class="btn" href="files/Oier_Villanueva_CV.pdf" download aria-label="Descargar CV">Descargar CV</a>
+                </div>
+            </section>
 
             <section class="intro">
-                <p>Bienvenido a la pagina web de Oier Villanueva, estudiante de <strong>ingenieria informatica</strong> en Donostia.</p>
-                <p>En esta web podras encontrar informacion sobre mis proyectos, habilidades y experiencia en el campo de la informatica.</p>
-                <p>Con una pasión por el desarrollo de software y las soluciones innovadoras, me dedico a crear aplicaciones web modernas, scripts automatizados y sistemas backend robustos. Siempre estoy buscando nuevos desafíos y oportunidades para crecer profesionalmente.</p>
-                <p><strong>Mis áreas de interés incluyen:</strong> Desarrollo web fullstack, automatización, bases de datos, programación orientada a objetos, y arquitectura de software.</p>
+                <p>Hola, soy <strong>Oier Villanueva</strong>, estudiante de Ingeniería Informática en Donostia y desarrollador con interés en backend, automatización y bases de datos. Me especializo en crear aplicaciones limpias y herramientas que simplifican tareas repetitivas.</p>
+                <p>En esta web encontrarás mis proyectos, código abierto y formas de contactarme para colaborar o contratar mis servicios.</p>
             </section>
 
             <div class="social-buttons">
@@ -45,21 +48,40 @@
             <section class="projects">
                 <h2 id="proyectos">Proyectos Destacados</h2>
                 <ul>
-                    <li>
-                        <strong>Proyecto 1: Aplicación Web Moderna</strong>
-                        <p>Aplicación web de ejemplo construida con tecnologías front-end actuales como HTML5, CSS3 y JavaScript vanilla. Incluye diseño responsivo, interfaz intuitiva y optimización para diferentes dispositivos.</p>
+                    <li hidden>
+                        <strong>Proyecto 1: Aplicación Web Moderna — Frontend</strong>
+                        <p>Problema: necesidad de una interfaz responsive y accesible para una pequeña app de gestión.</p>
+                        <p>Solución: interaz basada en HTML5/CSS3 y JavaScript vanilla con diseño responsivo y patrones de accesibilidad.</p>
+                        <p class="tech"><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
+                        <p class="result"><strong>Resultado:</strong> UI ligera y rápida, adaptable a móviles y escritorio.</p>
                         <a href="#" class="project-link">Ver más</a>
                     </li>
                     <li>
-                        <strong>Proyecto 2: Automatización VPN Universidad</strong>
-                        <p>Script automatizado que gestiona la conexión a la VPN de la universidad, integrando acceso directo al autenticador. Simplifica el proceso de conexión y maneja las credenciales de forma segura, permitiendo una conexión rápida y sin complicaciones desde línea de comandos.</p>
+                        <strong>Uni-VPN — Automatización de Conexión (CLI)</strong>
+                        <p>Problema: conexión manual a la VPN de la universidad con pasos repetitivos y propensos a error.</p>
+                        <p>Solución: script CLI que automatiza autenticación y conexión, integrando manejo seguro de credenciales.</p>
+                        <p class="tech"><strong>Tecnologías:</strong> Python, Bash</p>
+                        <p class="result"><strong>Resultado:</strong> Conexión rápida y reproducible desde la terminal; disponible en GitHub.</p>
                         <a href="https://github.com/Villacus/uni-vpn" target="_blank" rel="noopener noreferrer" class="project-link">Ver en GitHub</a>
                     </li>
-                    <li>
-                        <strong>Proyecto 3: Sistema de Bases de Datos</strong>
-                        <p>Proyecto educativo enfocado en bases de datos relacional y desarrollo back-end. Implementa operaciones CRUD, validación de datos, y buenas prácticas en seguridad.</p>
+                    <li hidden>
+                        <strong>Proyecto 3: Sistema de Bases de Datos — Backend</strong>
+                        <p>Problema: gestión y persistencia eficiente de datos para una aplicación educativa.</p>
+                        <p>Solución: API REST con buenas prácticas de validación y diseño relacional.</p>
+                        <p class="tech"><strong>Tecnologías:</strong> Node.js, Express, PostgreSQL</p>
+                        <p class="result"><strong>Resultado:</strong> API funcional con endpoints CRUD y ejemplos de uso para integración.</p>
                         <a href="#" class="project-link">Ver más</a>
                     </li>
+                </ul>
+            </section>
+
+            <section class="skills">
+                <h2>Habilidades</h2>
+                <ul class="skill-list">
+                    <li><strong>Frontend:</strong> HTML, CSS</li>
+                    <li><strong>Backend:</strong> Python, Java</li>
+                    <li><strong>Bases de datos:</strong></li>
+                    <li><strong>Herramientas:</strong> Git</li>
                 </ul>
             </section>
 
