@@ -1,0 +1,38 @@
+/* Tamaño común para ambos */
+.same-size-btn,
+.github-button, /* Este selector ayuda a forzar tamaño al script de GitHub */
+.instagram-button {
+  width: 140px;          /* Ajusta a tu preferencia */
+  height: 40px;          /* Ajusta a tu preferencia */
+  font-size: 18px;       /* Igual tamaño de texto */
+  display: inline-flex;  /* Centra icono y texto */
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  gap: 6px;              /* Espacio entre icono y texto */
+}
+
+/* GitHub style override (puede necesitar !important por el script externo) */
+.github-button {
+  background: #23272b !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 0 !important;
+  text-decoration: none !important;
+}
+
+/* Instagram style */
+.instagram-button {
+  background-color:#e01bb5;
+  color:#fff;
+  text-decoration:none;
+  border: none;
+  padding: 0;
+}
+
+.instagram-button i {
+  font-size: 18px;
+  margin-right: 4px;
+}
