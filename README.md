@@ -32,34 +32,11 @@ py -m http.server 5500
 - **Editar archivos:** Modifica `index.html` y `style.css` según necesites.
 - **Añadir imágenes:** Coloca nuevos archivos en `images/` y actualiza las rutas en `index.html`.
 
-## Despliegue sugerido
-
-- **GitHub Pages:** Subir este repositorio a GitHub y activar Pages desde la rama `main`.
-- **Hosting estático:** Netlify, Vercel o cualquier hosting de archivos estáticos funciona bien.
-
 ## Sitio publicado
 
 El sitio ya está desplegado en Netlify y accesible en:
 
 - https://villacus-web.netlify.app/
 
-- **Badge de estado (opcional):** Netlify ofrece un badge de estado de despliegue que puedes añadir al `README.md`. Para obtenerlo, ve al panel de tu sitio en Netlify > Site settings > General > Deploy badges o busca "Deploy status badge"; copia el URL del badge y añádelo como imagen Markdown:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ed743bdd-5429-4527-8d8e-0cc3822a27e5/deploy-status)](https://app.netlify.com/projects/villacus-web/deploys)
 
-```markdown
-[![Netlify Status](https://api.netlify.com/api/v1/badges/<YOUR_BADGE_ID>/deploy-status)](https://app.netlify.com/sites/<your-site-name>/deploys)
-```
-
-- **Despliegue continuo:** Si quieres que cada push a `main` se despliegue automáticamente, conecta tu repositorio a Netlify desde el panel de Netlify (Site settings > Continuous Deployment) y autoriza GitHub/GitLab/Bitbucket.
-
-## Contribuciones
-
-- **Cómo contribuir:** Abre un issue o un pull request con cambios pequeños. Describe qué cambias y por qué.
-
-## Contacto
-
-- **Autor / Equipo:** Villacus
-- **Correo:** (añadir correo o formulario de contacto aquí)
-
----
-
-Si quieres, puedo añadir una sección de ejemplos, capturas (`images/demo.png`) o instrucciones para automatizar deploy con GitHub Actions.
